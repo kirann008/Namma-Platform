@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ನಮ್ಮ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ಸ್ಮಾರ್ಟ್ ರೈಲ್ವೆ ಸಹಾಯಕ"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <!-- Selected Station -->
+
+    <TextView
+        android:id="@+id/selectedStationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಆಯ್ದ ನಿಲ್ದಾಣ : ಬೆಂಗಳೂರು"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:paddingStart="16dp"
+        android:textSize="18sp"/>
+
+    <!-- Live Train Card -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0D47A1"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ಪ್ರಸ್ತುತ ರೈಲು"
+                android:textStyle="bold"
+                android:textColor="#FFD600"/>
+
+            <TextView
+                android:id="@+id/liveTrainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ಮೈಸೂರು ಎಕ್ಸ್‌ಪ್ರೆಸ್"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/livePlatform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ವೇದಿಕೆ ಸಂಖ್ಯೆ : 2"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Title -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಪ್ರಸ್ತುತ ರೈಲು ಮಾಹಿತಿ"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        android:paddingStart="16dp"/>
+
+    <!-- RecyclerView -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"/>
+
+    <!-- Bottom Navigation -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>

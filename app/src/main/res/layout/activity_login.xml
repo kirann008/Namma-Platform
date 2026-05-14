@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D3B9E"
+    android:padding="22dp">
+
+    <!-- Space -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <!-- Welcome -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#FFD600"
+        android:textStyle="bold"
+        android:textSize="36sp"/>
+
+    <!-- Kannada -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಸ್ವಾಗತ"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Space -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <!-- Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR NAME / ನಿಮ್ಮ ಹೆಸರು"
+        android:textColor="#FFD600"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <!-- Name Input -->
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0BEC5"
+        android:textSize="20sp"
+        android:padding="18dp"
+        android:background="@drawable/login_edittext_bg"
+        android:layout_marginTop="14dp"/>
+
+    <!-- Space -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <!-- Button -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Start Journey / ಆರಂಭಿಸಿ  →"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#1A237E"
+        android:backgroundTint="#B0BEC5"/>
+
+</LinearLayout>

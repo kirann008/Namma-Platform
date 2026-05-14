@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="ಮುಖಪುಟ" />
+
+    <item
+        android:id="@+id/nav_audio"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="ಧ್ವನಿ" />
+
+    <item
+        android:id="@+id/nav_station"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="ನಿಲ್ದಾಣ" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="ಪ್ರೊಫೈಲ್" />
+
+</menu>

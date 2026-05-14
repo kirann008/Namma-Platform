@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="#FFFFFF">
+
+        <!-- Train Name Row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trainName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mysuru Express"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:textColor="#0D47A1"/>
+
+                <TextView
+                    android:id="@+id/trainKannada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ಮೈಸೂರು ಎಕ್ಸ್‌ಪ್ರೆಸ್"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/trainTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30 AM"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#0D47A1"/>
+        </LinearLayout>
+
+        <!-- Platform -->
+
+        <TextView
+            android:id="@+id/platformNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ವೇದಿಕೆ : 2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#FFD600"
+            android:background="#0D47A1"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"/>
+
+        <!-- Coach Sequence -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ಕೋಚ್ ಅನುಕ್ರಮ"
+            android:textStyle="bold"
+            android:textColor="#8A97B5"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Horizontal Coaches -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ENGINE -->
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#1A237E"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ENGINE"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಎಂಜಿನ್"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Position 1"
+                        android:textAlignment="center"
+                        android:textColor="#8A97B5"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <!-- GENERAL -->
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#FFD600"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GENERAL"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಸಾಮಾನ್ಯ"
+                            android:textColor="#000000"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Position 2"
+                        android:textAlignment="center"
+                        android:textColor="#8A97B5"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <!-- SLEEPER -->
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#2962FF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SLEEPER"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಸ್ಲೀಪರ್"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Position 3"
+                        android:textAlignment="center"
+                        android:textColor="#8A97B5"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <!-- AC -->
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#00B8A9"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AC"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಎಸಿ"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Position 4"
+                        android:textAlignment="center"
+                        android:textColor="#8A97B5"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <!-- LADIES -->
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#EC3FA9"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LADIES"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಮಹಿಳೆಯರು"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Position 5"
+                        android:textAlignment="center"
+                        android:textColor="#8A97B5"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Announcement Button -->
+
+        <Button
+            android:id="@+id/announceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ಘೋಷಣೆ"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:backgroundTint="#FFD600"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

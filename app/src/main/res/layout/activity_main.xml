@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#0D47A1"
+    tools:context=".MainActivity">
+
+    <!-- App Title -->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ನಮ್ಮ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್"
+        android:textColor="#FFD600"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!-- English Subtitle -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namma Platform"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Station Selection -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ನಿಲ್ದಾಣ ಆಯ್ಕೆ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/stationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFD600"/>
+
+    <!-- Next Train -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಮುಂದಿನ ರೈಲು"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/trainName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಯಶವಂತಪುರ ಎಕ್ಸ್‌ಪ್ರೆಸ್"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Platform Number -->
+
+    <TextView
+        android:id="@+id/platformText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ವೇದಿಕೆ ಸಂಖ್ಯೆ : 2"
+        android:textColor="#FFD600"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Coach Layout Title -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಬೋಗಿ ವಿನ್ಯಾಸ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Horizontal Coach Layout -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/coachLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Engine -->
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="ಎಂಜಿನ್"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+            <!-- General Coach -->
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="ಸಾಮಾನ್ಯ"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+            <!-- Ladies Coach -->
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="ಮಹಿಳಾ"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+            <!-- Sleeper Coaches -->
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="S1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="S2"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="S3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:background="#FFD600"
+                android:textSize="16sp"
+                android:layout_margin="6dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Speak Button -->
+
+    <Button
+        android:id="@+id/speakButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ಕನ್ನಡದಲ್ಲಿ ಕೇಳಿ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FFD600"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

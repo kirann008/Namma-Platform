@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0D47A1"
+    android:padding="20dp">
+
+    <!-- Train Title -->
+
+    <TextView
+        android:id="@+id/trainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Name"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Mic Icon -->
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:tint="#FFD600"/>
+
+    <!-- Assistant Text -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kannada Railway Assistant"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Speak Button -->
+
+    <Button
+        android:id="@+id/speakButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="ಕನ್ನಡ ಘೋಷಣೆ"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FFD600"
+        android:textColor="#000000"/>
+
+</LinearLayout>
